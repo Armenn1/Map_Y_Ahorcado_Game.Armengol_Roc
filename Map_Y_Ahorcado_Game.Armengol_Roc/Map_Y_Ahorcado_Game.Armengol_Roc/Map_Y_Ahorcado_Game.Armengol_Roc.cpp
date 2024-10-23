@@ -2,5 +2,13 @@
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    char map[10][10];
+
+
+
+
+
+
+
+
 }
