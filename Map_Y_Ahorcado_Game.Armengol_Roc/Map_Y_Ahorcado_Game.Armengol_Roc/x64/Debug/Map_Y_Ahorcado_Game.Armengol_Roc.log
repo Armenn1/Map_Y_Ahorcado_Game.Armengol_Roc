@@ -1,2 +1,3 @@
 ﻿  Map_Y_Ahorcado_Game.Armengol_Roc.cpp
-  Map_Y_Ahorcado_Game.Armengol_Roc.vcxproj -> C:\Users\vedrunavall\Documents\GitHub\Map_Y_Ahorcado_Game.Armengol_Roc\Map_Y_Ahorcado_Game.Armengol_Roc\x64\Debug\Map_Y_Ahorcado_Game.Armengol_Roc.exe
+C:\Users\armen\Documents\GitHub\Map_Y_Ahorcado_Game.Armengol_Roc\Map_Y_Ahorcado_Game.Armengol_Roc\Map_Y_Ahorcado_Game.Armengol_Roc\Map_Y_Ahorcado_Game.Armengol_Roc.cpp(90,21): warning C4267: 'inicializando': conversión de 'size_t' a 'int'; posible pérdida de datos
+  Map_Y_Ahorcado_Game.Armengol_Roc.vcxproj -> C:\Users\armen\Documents\GitHub\Map_Y_Ahorcado_Game.Armengol_Roc\Map_Y_Ahorcado_Game.Armengol_Roc\x64\Debug\Map_Y_Ahorcado_Game.Armengol_Roc.exe
