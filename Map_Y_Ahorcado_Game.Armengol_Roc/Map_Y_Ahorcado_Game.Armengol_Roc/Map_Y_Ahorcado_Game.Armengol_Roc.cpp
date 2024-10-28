@@ -6,6 +6,7 @@ int main()
     char map[10][10];
     int vidas = 3;
     int move;
+    int continuar;
 
     int posX = 0;
     int posY = 0;
@@ -85,6 +86,7 @@ int main()
             char letra;
 
             printf("Dame una palabra:\n");
+            scanf_s("%d", &letra);//saltar el \n
             gets_s(cadena);
 
             int tam = strlen(cadena);
@@ -97,7 +99,7 @@ int main()
             }
             do
             {
-
+                int letra_correcta = 0;
                 printf("\n Dame una letra: \n");
                 scanf_s("%c", &letra, 1);
                 getchar();
@@ -107,26 +109,46 @@ int main()
                     if (letra == cadena[i])
                     {
                         cadena2[i] = cadena[i];
+                        letra_correcta = 1;
 
 
                     }
-
                     printf("%c", cadena2[i]);
+                }      
+                if (letra_correcta == 0)
+                {
+                    vidas--;
+                    printf("Letra incorrecta, tienes %d vidas!\n", vidas);
                 }
             
                 printf("\n");
 
-            } while (strncmp(cadena, cadena2, tam));
+            } while (vidas > 0 && strncmp(cadena, cadena2, tam));
 
-            if (vidas <= 0)
-            {
-                printf("\nHas perdidio la palabra era: %s\n", cadena);
-            }
-            else
+            if (vidas >= 0)
             {
                 printf("\nFelicidades adivinaste la palabra: %s\n", cadena);
             }
+            else
+            {
+                printf("\nHas perdido, la palabra correcta era: %s\n", cadena);
+            }
             printf("\n");
+           
+            printf("Quieres seguir jugando?\n");
+            printf(" 1. Si\n 2. No\n");
+            scanf_s("%d", &continuar);
+
+            if (continuar == 2)
+            {
+                vidas = 0;
+                printf("\nHa terminado el juego!\n");
+            }
+            else if (continuar == 1)
+            {
+
+            }
+       
         }
 
        
