@@ -132,29 +132,24 @@ int main()
             }
             do
             {
-                int letra_correcta = 0;
-                printf("\n Dame una letra: \n");
-                scanf_s("%c", &letra, 1);
-                getchar();
+                bool letra_correcta = false;
+                printf("\n Dame una letra:");
+                scanf_s(" %c", &letra, 1);
 
                 for (int i = 0; i < tam; i++)
                 {
                     if (letra == cadena[i])
                     {
                         cadena2[i] = cadena[i];
-                        letra_correcta = 1;
-
-
+                        letra_correcta = true;
                     }
                     printf("%c", cadena2[i]);
                 }      
-                if (letra_correcta == 0)
+                if (!letra_correcta)
                 {
                     vidas--;
                     printf("Letra incorrecta, tienes %d vidas!\n", vidas);
                 }
-            
-                printf("\n");
 
             } while (vidas > 0 && strncmp(cadena, cadena2, tam));
 
@@ -197,14 +192,4 @@ int main()
 
 
     }
-
-
-
-    
-
-
-
-
-
-
 }
