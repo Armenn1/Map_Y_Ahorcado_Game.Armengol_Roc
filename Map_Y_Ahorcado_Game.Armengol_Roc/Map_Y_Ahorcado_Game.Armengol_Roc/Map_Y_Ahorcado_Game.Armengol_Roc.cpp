@@ -4,7 +4,7 @@
 int main()
 {
     char map[10][10];
-    int vidas = 3;
+    int vidas = 5;
     int move;
     int continuar;
 
@@ -47,21 +47,50 @@ int main()
 
         switch (move)
         {
-        case 1: 
-            posX--;
+        case 1:   // ARRIBA
+            if (posX > 0)
+            {
+                posX--;
+            }
+            else {
+                printf("No puede salir del tablero!");
+                vidas--;
+            }
             break;
-        case 2: 
-            posX++;
+        case 2:  // ABAJO
+            if (posX < 9)
+            {
+                posX++;
+            }
+            else {
+                printf("No puede salir del tablero!");
+                vidas--;
+            }
             break;
-        case 3:
-            posY--;
+        case 3: // IZQUIERDA
+            if (posY > 0)
+            {
+                posY--;
+            }
+            else {
+                printf("No puede salir del tablero!");
+                vidas--;
+            }
             break;
-        case 4: 
-            posY++;
+        case 4:  // DERECHA
+            if (posY < 9)
+            {
+                posY++;
+            }
+            else {
+                printf("No puede salir del tablero!");
+                vidas--;
+            }
             break;
 
         default:
             printf("Movimiento invalido!\n");
+            vidas--;
             break;
         }
         
@@ -125,29 +154,37 @@ int main()
 
             } while (vidas > 0 && strncmp(cadena, cadena2, tam));
 
-            if (vidas >= 0)
+            if (vidas > 0)
             {
                 printf("\nFelicidades adivinaste la palabra: %s\n", cadena);
+
+                printf("Quieres seguir jugando?\n"); // dentro para que el usuario no pueda seguir jugando si pierde todas las vidas.
+                printf(" 1. Si\n 2. No\n");
+                scanf_s("%d", &continuar);
+
+                if (continuar == 2)
+                {
+                    vidas = 0;
+                    printf("\nHa terminado el juego!\n");
+                }
+                else if (continuar == 1)
+                {
+
+                }
+                else
+                {
+                    printf("Introduce 1 Para seguir jugando, 2 Para terminar el juego..");
+                }
             }
             else
             {
                 printf("\nHas perdido, la palabra correcta era: %s\n", cadena);
+                printf("\nHa terminado el juego, hasta pronto!\n");
             }
             printf("\n");
            
-            printf("Quieres seguir jugando?\n");
-            printf(" 1. Si\n 2. No\n");
-            scanf_s("%d", &continuar);
 
-            if (continuar == 2)
-            {
-                vidas = 0;
-                printf("\nHa terminado el juego!\n");
-            }
-            else if (continuar == 1)
-            {
-
-            }
+            
        
         }
 
