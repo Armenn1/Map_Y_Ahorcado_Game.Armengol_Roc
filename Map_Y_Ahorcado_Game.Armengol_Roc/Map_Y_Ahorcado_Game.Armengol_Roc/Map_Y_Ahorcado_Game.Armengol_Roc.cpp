@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string.h>
+#include <time.h>
 
 int main()
 {
@@ -27,6 +28,7 @@ int main()
 
     while (vidas > 0)
     {
+        
         for (int i = 0; i < 10; i++)
         {
             printf("\n");
@@ -170,10 +172,6 @@ int main()
                 else if (continuar == 1)
                 {
 
-                }
-                else
-                {
-                    printf("Introduce 1 Para seguir jugando, 2 Para terminar el juego..");
                 }
             }
             else
