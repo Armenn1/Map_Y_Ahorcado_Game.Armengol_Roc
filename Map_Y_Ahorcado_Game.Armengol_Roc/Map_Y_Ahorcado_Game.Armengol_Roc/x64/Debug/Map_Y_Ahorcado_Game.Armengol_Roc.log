@@ -1,7 +1,8 @@
 ﻿  Map_Y_Ahorcado_Game.Armengol_Roc.cpp
-C:\Users\vedrunavall\Documents\GitHub\Map_Y_Ahorcado_Game.Armengol_Roc\Map_Y_Ahorcado_Game.Armengol_Roc\Map_Y_Ahorcado_Game.Armengol_Roc\Map_Y_Ahorcado_Game.Armengol_Roc.cpp(119,21): warning C4477: 'scanf_s' : la cadena de formato '%d' requiere un argumento de tipo 'int *', pero el argumento variádico 1 tiene el tipo 'char *'
-      C:\Users\vedrunavall\Documents\GitHub\Map_Y_Ahorcado_Game.Armengol_Roc\Map_Y_Ahorcado_Game.Armengol_Roc\Map_Y_Ahorcado_Game.Armengol_Roc\Map_Y_Ahorcado_Game.Armengol_Roc.cpp(119,21):
+C:\Users\vedrunavall\Documents\GitHub\Map_Y_Ahorcado_Game.Armengol_Roc\Map_Y_Ahorcado_Game.Armengol_Roc\Map_Y_Ahorcado_Game.Armengol_Roc\Map_Y_Ahorcado_Game.Armengol_Roc.cpp(18,15): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+C:\Users\vedrunavall\Documents\GitHub\Map_Y_Ahorcado_Game.Armengol_Roc\Map_Y_Ahorcado_Game.Armengol_Roc\Map_Y_Ahorcado_Game.Armengol_Roc\Map_Y_Ahorcado_Game.Armengol_Roc.cpp(122,21): warning C4477: 'scanf_s' : la cadena de formato '%d' requiere un argumento de tipo 'int *', pero el argumento variádico 1 tiene el tipo 'char *'
+      C:\Users\vedrunavall\Documents\GitHub\Map_Y_Ahorcado_Game.Armengol_Roc\Map_Y_Ahorcado_Game.Armengol_Roc\Map_Y_Ahorcado_Game.Armengol_Roc\Map_Y_Ahorcado_Game.Armengol_Roc.cpp(122,21):
       considere el uso de ' %hhd' en la cadena de formato
   
-C:\Users\vedrunavall\Documents\GitHub\Map_Y_Ahorcado_Game.Armengol_Roc\Map_Y_Ahorcado_Game.Armengol_Roc\Map_Y_Ahorcado_Game.Armengol_Roc\Map_Y_Ahorcado_Game.Armengol_Roc.cpp(122,21): warning C4267: 'inicializando': conversión de 'size_t' a 'int'; posible pérdida de datos
+C:\Users\vedrunavall\Documents\GitHub\Map_Y_Ahorcado_Game.Armengol_Roc\Map_Y_Ahorcado_Game.Armengol_Roc\Map_Y_Ahorcado_Game.Armengol_Roc\Map_Y_Ahorcado_Game.Armengol_Roc.cpp(125,21): warning C4267: 'inicializando': conversión de 'size_t' a 'int'; posible pérdida de datos
   Map_Y_Ahorcado_Game.Armengol_Roc.vcxproj -> C:\Users\vedrunavall\Documents\GitHub\Map_Y_Ahorcado_Game.Armengol_Roc\Map_Y_Ahorcado_Game.Armengol_Roc\x64\Debug\Map_Y_Ahorcado_Game.Armengol_Roc.exe

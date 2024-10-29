@@ -15,6 +15,8 @@ int main()
     int retoX = 4;
     int retoY = 4;
 
+    srand(time(NULL));  
+
     for (int i = 0; i < 10; i++) 
     {
         for (int j = 0; j < 10; j++) 
@@ -180,14 +182,18 @@ int main()
                 printf("\nHa terminado el juego, hasta pronto!\n");
             }
             printf("\n");
-           
+
+            retoX  = (rand() % 10);
+            retoY = (rand() % 10);
+
+            map[retoX][retoY] = 'R';
 
             
        
         }
 
        
-
+        system("cls");
 
 
     }
