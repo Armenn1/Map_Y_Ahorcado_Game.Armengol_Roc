@@ -164,7 +164,7 @@ int main()
                 if (continuar == 2)
                 {
                     vidas = 0;
-                    printf("\nHa terminado el juego!\n");
+                    
                 }
                 else if (continuar == 1)
                 {
@@ -192,4 +192,5 @@ int main()
 
 
     }
+    printf("Fin del juego!\n");
 }
